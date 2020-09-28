@@ -6,11 +6,12 @@
 
 body{
     width: 100%;
-    height: 120vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 input, button {
@@ -46,13 +47,10 @@ header button i{
 }
 
 header img {
-    width: 80px;
+    width: 120px;
     position: absolute;
     left: 0;
-    right: 0;
     top: 0;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .lookout{

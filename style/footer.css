@@ -1,0 +1,30 @@
+@import url(style.css);
+
+footer{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+footer div{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div i{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+
+}
+
