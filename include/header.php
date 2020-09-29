@@ -13,6 +13,9 @@
         <header>
             <div class="heading">
                 <a href="<?php echo URL ?>">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="<?php echo URL ?>">
                     <img src="<?php echo URL ?>img/logo.png" alt="logo du site">
                 </a>
                 <a href="<?php echo URL ?>">

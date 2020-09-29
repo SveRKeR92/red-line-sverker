@@ -32,8 +32,8 @@
                         <tr>
                             <td>
                                 <div class="hundred">
-                                    <div class="percent">
-                                        <p>Le nord</p>
+                                    <div class="percent p72">
+                                        <p>Le Nord</p>
                                     </div>
                                     <p>72 %</p>
                                 </div>
@@ -47,7 +47,7 @@
                         <tr>
                             <td>
                                 <div class="hundred">
-                                    <div class="percent">
+                                    <div class="percent p72">
                                         <p>L'Ouest</p>
                                     </div>
                                     <p>72 %</p>
@@ -57,7 +57,7 @@
                     </tbody>
                 </table>
 
-                
+
                 <h2>Tendances</h2>
                 <hr>
                 <h3>
@@ -73,7 +73,7 @@
                         <tr>
                             <td>
                                 <div class="hundred">
-                                    <div class="percent">
+                                    <div class="percent p72">
                                         <p>6</p>
                                     </div>
                                     <p>72 %</p>
@@ -88,7 +88,7 @@
                         <tr>
                             <td>
                                 <div class="hundred">
-                                    <div class="percent">
+                                    <div class="percent p72">
                                         <p>L'Ouest</p>
                                     </div>
                                     <p>72 %</p>

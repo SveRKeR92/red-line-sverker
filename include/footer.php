@@ -1,7 +1,7 @@
         <footer>
             <a href="<?php echo URL ?>">
-                <i class="fas fa-question"></i>
-                <p>Sondages</p>
+                <i class="fas fa-home"></i>
+                <p>Accueil</p>
             </a>
             <a href="<?php echo URL ?>views/create.php">
                 <i class="fas fa-plus"></i>

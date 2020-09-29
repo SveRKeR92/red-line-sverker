@@ -31,6 +31,10 @@ input, button {
     outline: none;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -96,7 +100,8 @@ header a{
 }
 
 main{
-    padding: 5px;
+    padding: 20px 5px;
+    padding-bottom: 70px;
 }
 
 main hr{
@@ -114,14 +119,14 @@ main h2{
     font-size: 30px;
 }
 
-main h3 a{
+main h3, a{
     color:  rgb(63, 141, 230);
     text-transform: capitalize;
     font-size: 25px;
 }
 
 main table{
-    width: 80%;
+    width: 90%;
     margin: 0 auto 30px;
 }
 
@@ -130,7 +135,7 @@ main table tr td > p {
 }
 
 main table{
-    border-spacing: 0 10px;
+    border-spacing: 10px;
 }
 
 .hundred {
@@ -142,14 +147,46 @@ main table{
     justify-content: space-between;
     padding-right: 5px;
     font-weight: bold;
+    height: 40px;
 }
 
 .percent{
-    width: 72%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     background-color: rgb(63, 141, 230);
     padding: 5px;
-    text-align: left;
-    
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.percent p{
+    white-space:nowrap;
+	display:inline;
+}
+
+.p72{
+    width: 72%;
+}
+
+.p14{
+    width: 14%;
+}
+
+.p10 {
+    width: 10%;
+}
+
+.p4{
+    width: 4%;
+}
+
+main table button{
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 100px;
+    border: none;
+    background-color: #6BCDFD;
+    font-size: 15px;
+    color: white;
 }
