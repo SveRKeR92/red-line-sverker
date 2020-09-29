@@ -1,7 +1,7 @@
 @import url(style.css);
 
 footer{
-    background-color: black;
+    background-color: var(--head-foot-bcg-color);
     position: fixed;
     bottom: 0;
     display: flex;
@@ -10,21 +10,20 @@ footer{
     padding: 20px;
 }
 
-footer div{
+footer a{
     text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 
-footer div i{
+footer a i{
     margin-bottom: 5px;
     font-size: 20px;
 }
 
-footer a{
-    text-decoration: none;
-    color: white;
-
+footer a p{
+    font-size: 15px;
 }
 

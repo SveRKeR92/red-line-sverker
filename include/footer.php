@@ -1,16 +1,16 @@
         <footer>
-            <div>
+            <a href="<?php echo URL ?>">
                 <i class="fas fa-question"></i>
-                <a href="<?php echo URL ?>">Sondages</a>
-            </div>
-            <div>
+                <p>Sondages</p>
+            </a>
+            <a href="<?php echo URL ?>views/create.php">
                 <i class="fas fa-plus"></i>
-                <a href="<?php echo URL ?>views/create.php">Créer</a>
-            </div>
-            <div>
+                <p>Créer</p>
+            </a>
+            <a href="<?php echo URL ?>views/leaderboard.php">
                 <i class="fas fa-trophy"></i>
-                <a href="<?php echo URL ?>views/leaderboard.php">Classement</a>
-            </div>
+                <p>Classement</p>
+            </a>
         </footer>
     </body>
 </html>
