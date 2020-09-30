@@ -237,6 +237,33 @@ main .table-lead{
     color: #cd7f32;
 }
 
+footer div{
+    background-color: var(--head-foot-bcg-color);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+footer a{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+footer a i{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+footer a p{
+    font-size: 15px;
+}
 
 @media screen and (min-width: 1200px){
     body > * > * {
