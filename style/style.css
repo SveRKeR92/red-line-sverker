@@ -13,11 +13,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* body > * > * {
-    width: 60%;
-    margin: auto;
-} => FOR DESKTOP */
-
 a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -121,13 +116,37 @@ main h2{
     font-size: 30px;
 }
 
+main .nav{
+    position: fixed;
+    top: 15vh;
+    border: 1px solid rgba(100, 100, 100, 0.7);
+    padding: 20px;
+    visibility: hidden;
+}
+
+.navleft{
+    left: 5%;
+}
+
+.navright{
+    right: 5%;
+}
+
+.nav strong{
+    font-size: 30px;
+}
+
+ul{
+    list-style: none;
+}
+
 main h3, a{
     color:  rgb(63, 141, 230);
     text-transform: capitalize;
     font-size: 25px;
 }
 
-main table{
+main .table-accueil{
     width: 90%;
     margin: 0 auto 30px;
 }
@@ -183,7 +202,7 @@ main table{
     width: 4%;
 }
 
-main table button{
+main button{
     height: 40px;
     padding: 0 15px;
     border-radius: 100px;
@@ -191,4 +210,44 @@ main table button{
     background-color: #6BCDFD;
     font-size: 15px;
     color: white;
+    display: block;
+    margin: auto;
+}
+
+main .table-lead{
+    margin: 10px auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.gold, .silver, .bronze{
+    text-shadow: 1px 1px 5px black;
+}
+
+.gold{
+    color: gold;
+}
+
+.silver{
+    color: silver;
+}
+
+.bronze{
+    color: #cd7f32;
+}
+
+
+@media screen and (min-width: 1200px){
+    body > * > * {
+        width: 40%;
+        margin: auto;
+    }
+
+    footer div{
+        justify-content: space-evenly !important;
+    }
+
+    main .nav{
+        visibility: visible;
+    }
 }

@@ -8,8 +8,8 @@
        <!-- <h1>En cours de developpement</h1> -->
 
         <h3>Sondages Koh-Lanta</h3>
-
-        <table>
+        <hr>
+        <table class="table-accueil">
             <tbody>
                 <tr>
                     <td>

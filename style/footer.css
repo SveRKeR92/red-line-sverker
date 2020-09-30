@@ -1,6 +1,6 @@
 @import url(style.css);
 
-footer{
+footer div{
     background-color: var(--head-foot-bcg-color);
     position: fixed;
     bottom: 0;

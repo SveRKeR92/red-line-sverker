@@ -19,10 +19,30 @@
             <div>
                 <h2>Mes Sondages</h2>
                 <hr>
+                <div class="nav navleft">
+                    <ul>
+                        <li><strong>Catégories</strong></li>
+                        <hr>
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">Télé-Réalité</a></li>
+                        <li><a href="#">Divertissement</a></li>
+                        <li><a href="#">Cuinise</a></li>
+                    </ul>
+                </div>
+                <div class="nav navright">
+                    <ul>
+                        <li><strong>Suggestions</strong></li>
+                        <hr>
+                        <li><a href="#">Top Chef</a></li>
+                        <li><a href="#">5 Hommes à la maison</a></li>
+                        <li><a href="#">PSG - OM</a></li>
+                        <li><a href="#">Les Anges 72</a></li>
+                    </ul>
+                </div>
                 <h3>
                     <a href="<?= URL?>views/sondage.php">Koh-Lanta</a>
                 </h3>
-                <table>
+                <table class="table-accueil">
                     <tbody>
                         <tr>
                             <td>
@@ -63,7 +83,7 @@
                 <h3>
                     <a href="<?= URL?>views/sondage.php">4 mariages</a>
                 </h3>
-                <table>
+                <table class="table-accueil">
                     <tbody>
                         <tr>
                             <td>
