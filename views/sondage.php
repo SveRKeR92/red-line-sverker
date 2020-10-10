@@ -5,8 +5,6 @@
 
 <main>
     <div>
-       <!-- <h1>En cours de developpement</h1> -->
-
         <h3>Sondages Koh-Lanta</h3>
         <hr>
         <table class="table-accueil">
@@ -72,7 +70,7 @@
         </table>
     </div>
 </main>
-
+<script src="../script/quizz.js"></script>
 
 <?php
     include '../include/footer.php'
