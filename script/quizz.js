@@ -54,6 +54,7 @@ function drawQuizz(quizz){
         tr.className = index;
         tbody.appendChild(tr);
         let td = document.createElement("td");
+        td.setAttribute('colspan', '2');
         tr.appendChild(td);
         let qTitle = document.createElement("h4");
         qTitle.className = "titleQuestion";
@@ -68,6 +69,7 @@ function drawQuizz(quizz){
             qtr.className = index;
             tbody.appendChild(qtr);
             let qtd = document.createElement("td");
+            qtd.style.width = "80%";
             qtr.appendChild(qtd);
             let div100 = document.createElement("div");
             div100.className = "hundred";
@@ -91,6 +93,7 @@ function drawQuizz(quizz){
 
             //création boutton
             let tdButton = document.createElement("td");
+            tdButton.style.width = "20%";
             qtr.appendChild(tdButton);
             let button = document.createElement("button");
             button.innerHTML = "Vote";
@@ -104,13 +107,44 @@ function drawQuizz(quizz){
     container.appendChild(sondageTable);
 }
 
-let i = 0;
-let score = 0;
-console.log("question : "+ (i+1));
-drawQuizz(quizz);
+function hideQuestion(array, index){
+    for (k = 0; k < array.length; k++){
+        if(array[k].className != index){
+            array[k].style.display = "none";
+        }else{
+            array[k].style.display = "table-row";
+        }
+    }
+}
 
+let i = -1;
+let score = 0;
+let congrats = "";
+drawQuizz(quizz);
 let linesToHide = document.getElementsByTagName("tr");
-hideQuestion(linesToHide);
+hideQuestion(linesToHide, i);
+
+//animation affichage pseudo
+$('#setPseudo').css('opacity', '1');
+$('#setPseudo').css('transform', 'translate(0, 100%)');
+
+
+//Definition pseudo
+let pseudo;
+
+$('#pseudoSubmit').on('click', function(){
+    console.log($('#pseudo').val());
+    if($('#pseudo').val() != ""){
+        pseudo = $('#pseudo').val();
+        $('#setPseudo').css('display', 'none');
+        i++;
+        hideQuestion(linesToHide, i);
+    }else{
+        alert('entrez un pseudo');
+    }
+});
+
+
 
 $('.answer').on('click', function(){
     //affichage de la question suivante
@@ -119,24 +153,26 @@ $('.answer').on('click', function(){
     console.log(questionIndex + ' ' + typeof questionIndex);
     let linesToHide = document.getElementsByTagName("tr");
     console.log(quizz.questions[i].answers[questionIndex].isRight);
+
     //comptabilisation des points
     if(quizz.questions[i].answers[questionIndex].isRight == true){
         score++;
         console.log(score);
     }
     i++;
-    hideQuestion(linesToHide);
+    hideQuestion(linesToHide, i);
     if (i >= quizz.questions.length){
-        alert("Bien joué, tu as " + score + " bonnes réponses !");
+        if (score <= 1){
+            congrats = "Bien joué " + pseudo +", tu as obtenu " + score + " bonne réponse !";
+        }else{
+            congrats = "Bien joué " + pseudo +", tu as obtenu " + score + " bonnes réponses !";
+        }
+        //création div résultats
+        let results = document.createElement("div");
+        results.innerHTML = congrats;
+        results.style.fontSize = "35px";
+        container.appendChild(results);
     }
 });
 
-function hideQuestion(array){
-    for (k = 0; k < array.length; k++){
-        if(array[k].className != i){
-            array[k].style.display = "none";
-        }else{
-            linesToHide[k].style.display = "table-row";
-        }
-    }
-}
+

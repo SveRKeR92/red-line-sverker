@@ -36,6 +36,8 @@ button:hover{
     transition: 0.2s;
 }
 
+/* ------------------- HEADER / SEARCH BAR ---------------- */
+
 header {
     position: sticky;
     top: 0;
@@ -145,6 +147,8 @@ ul{
     list-style: none;
 }
 
+/* ----------------------- BODY / MAIN --------------------- */
+
 main h3, a{
     color:  rgb(63, 141, 230);
     text-transform: capitalize;
@@ -195,23 +199,7 @@ main table{
 	display:inline;
 }
 
-.p72{
-    width: 72%;
-}
-
-.p14{
-    width: 14%;
-}
-
-.p10 {
-    width: 10%;
-}
-
-.p4{
-    width: 4%;
-}
-
-main button{
+button{
     height: 40px;
     padding: 0 15px;
     border-radius: 100px;
@@ -224,7 +212,7 @@ main button{
     transition: 0.2s;
 }
 
-main button:active{
+button:active{
     box-shadow: none;
 }
 
@@ -249,6 +237,33 @@ main .table-lead{
 .bronze{
     color: #cd7f32;
 }
+
+/* ---------------- SONDAGE ----------------- */
+.setPseudo{
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(180, 180, 180);
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.setPseudo label{
+    font-size: 15px;
+}
+
+.setPseudo input{
+    margin: 20px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+
+/* -------------- FOOTER --------------- */
 
 footer div{
     background-color: var(--head-foot-bcg-color);
@@ -290,5 +305,11 @@ footer a p{
 
     main .nav{
         display: block;
+    }
+
+    .setPseudo{
+        width: 40%;
+        right: 0;
+        margin: auto;
     }
 }
