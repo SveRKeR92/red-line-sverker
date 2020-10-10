@@ -13,6 +13,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+}
+
 a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -158,6 +162,10 @@ main table tr td > p {
 
 main table{
     border-spacing: 10px;
+}
+
+.titleQuestion{
+    font-size: 25px;
 }
 
 .hundred {

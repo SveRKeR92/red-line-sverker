@@ -13,7 +13,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <p>Quelle équipe sera au conseil ?</p>
+                        <h4 class="titleQuestion">Quelle équipe sera au conseil ?</h4>
                     </td>
                 </tr>
                 <tr>
@@ -72,11 +72,6 @@
         </table>
     </div>
 </main>
-
-
-
-
-
 
 
 <?php
