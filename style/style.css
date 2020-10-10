@@ -221,6 +221,11 @@ main button{
     color: white;
     display: block;
     margin: auto;
+    transition: 0.2s;
+}
+
+main button:active{
+    box-shadow: none;
 }
 
 main .table-lead{

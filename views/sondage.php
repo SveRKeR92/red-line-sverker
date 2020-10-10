@@ -4,7 +4,7 @@
 ?>
 
 <main>
-    <div>
+    <div id="container">
         <h3>Sondages Koh-Lanta</h3>
         <hr>
         <table class="table-accueil">
@@ -24,7 +24,7 @@
                         </div>
                     </td>
                     <td>
-                        <button>Vote</button>
+                        <button id="nord">Vote</button>
                     </td>
                 </tr>
                 <tr>
@@ -37,7 +37,7 @@
                         </div>
                     </td>
                     <td>
-                        <button>Vote</button>
+                        <button id="sud">Vote</button>
                     </td>
                 </tr>
                 <tr>
@@ -50,7 +50,7 @@
                         </div>
                     </td>
                     <td>
-                        <button>Vote</button>
+                        <button id="est">Vote</button>
                     </td>
                 </tr>
                 <tr>
@@ -63,7 +63,7 @@
                         </div>
                     </td>
                     <td>
-                        <button>Vote</button>
+                        <button id="ouest">Vote</button>
                     </td>
                 </tr>
             </tbody>
