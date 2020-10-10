@@ -5,7 +5,7 @@
 
 <main>
     <div id="container">
-        <h3>Sondages Koh-Lanta</h3>
+        <!-- <h3>Sondages Koh-Lanta</h3>
         <hr>
         <table class="table-accueil">
             <tbody>
@@ -67,7 +67,7 @@
                     </td>
                 </tr>
             </tbody>
-        </table>
+        </table> -->
     </div>
 </main>
 <script src="../script/quizz.js"></script>
