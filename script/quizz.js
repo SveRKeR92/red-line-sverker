@@ -125,9 +125,10 @@ let linesToHide = document.getElementsByTagName("tr");
 hideQuestion(linesToHide, i);
 
 //animation affichage pseudo
-$('#setPseudo').css('opacity', '1');
-$('#setPseudo').css('transform', 'translate(0, 100%)');
-
+window.onload = function(){
+    $('#setPseudo').css('opacity', '1');
+    $('#setPseudo').css('transform', 'translate(0, 100%)');
+};
 
 //Definition pseudo
 let pseudo;
