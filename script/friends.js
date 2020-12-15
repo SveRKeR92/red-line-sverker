@@ -39,8 +39,9 @@ function getFriends(){
             // location.href= "../Public/profil.php";
             // console.log(response);
 
-            var friends = response
-            $("#friendsList").append('<h2>Liste d\'amis</h2>');
+            let friends = response
+            $("#friendsList").append('<h2>Mes amis</h2>');
+            $("#friendsList").append('<hr>');
             friends.forEach((item, index) => {
                 $("#friendsList").append("<li>"+ (index + 1) + " " + item["pseudo"] + " </li><button onclick='deletefriend(" + item["user_id"] + ")'>Supprimer</button><br>");
             });

@@ -4,6 +4,7 @@ include '../include/header.php';
 ?>
 
 <main>
+    <?php include '../include/navleft.php'; ?>
     <div id="container">
         <div class="setPseudo" id="setPseudo">
             <label for="pseudo">Veuillez indiquer un pseudo pour commencer : </label>
@@ -11,6 +12,7 @@ include '../include/header.php';
             <button type="submit" id="pseudoSubmit">Commencer !</button>
         </div>
     </div>
+    <?php include '../include/navright.php'; ?>
 </main>
 <!-- <script src="../script/quizz.js"></script> -->
 

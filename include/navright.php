@@ -1,9 +1,13 @@
-<section class="nav navright">
-        <h2>Mes amis</h2>
-        <hr>
-        <ul>
-            <li>ami 1</li>
-            <li>ami 2</li>
-            <li>ami 3</li>
-        </ul>
-</section>
+<?php
+
+if (!empty($_SESSION['user'])){
+   ?> 
+   <section class="nav navright" id="friendsList">
+
+    </section>
+
+    <script src="../script/friends.js"></script>
+    <?php
+}
+
+?>

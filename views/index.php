@@ -2,8 +2,7 @@
 include '../include/init.php';
 include '../include/header.php';
 
-require "../Autoloader.php";
-Autoloader::register();
+
 
 use App\Sondage;
 
@@ -57,3 +56,4 @@ $sondages = new Sondage();
 <?php
 include '../include/footer.php'
 ?>
+
