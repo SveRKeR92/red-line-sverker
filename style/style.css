@@ -1,6 +1,3 @@
-:root{
-    --head-foot-bcg-color: rgb(0, 0, 0);
-}
 
 * {
     margin: 0;
@@ -42,7 +39,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: var(--head-foot-bcg-color);
+    min-height: 60px;
+    background-color: black;
 }
 
 header .heading{
@@ -124,20 +122,9 @@ main h2{
 
 main .nav{
     width: fit-content;
-    border: 1px solid rgba(100, 100, 100, 0.7);
-    padding: 20px;
     display: none;
 }
 
-.navleft{
-    float: left;
-    margin-right: 50px;
-}
-
-.navright{
-    float: right;
-    margin-left: 50px;
-}
 
 .nav strong{
     font-size: 30px;
@@ -148,6 +135,18 @@ ul{
 }
 
 /* ----------------------- BODY / MAIN --------------------- */
+ .main-content{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main-content article{
+    margin: 20px 0;
+}
+
+.main-content article a{
+    text-transform: none;
+}
 
 main h3, a{
     color:  rgb(63, 141, 230);
@@ -264,11 +263,15 @@ main .table-lead{
 
 
 /* -------------- FOOTER --------------- */
-
-footer div{
-    background-color: var(--head-foot-bcg-color);
+footer{
+    background-color: black;
     position: fixed;
     bottom: 0;
+    width: 100%;
+    min-height: 60px;
+}
+
+footer div{ 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -296,11 +299,16 @@ footer a p{
 @media screen and (min-width: 1200px){
     body > * > * {
         width: 40%;
-        margin: auto;
+        margin: 0 auto;
     }
 
     footer div{
         justify-content: space-evenly !important;
+    }
+
+    main{
+        display: flex;
+        justify-content: space-evenly;
     }
 
     main .nav{

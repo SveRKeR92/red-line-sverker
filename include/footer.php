@@ -1,5 +1,5 @@
         <footer>
-            <div>
+            <!-- <div>
                 <a href="<?php echo URL ?>">
                     <i class="fas fa-home"></i>
                     <p>Accueil</p>
@@ -12,7 +12,7 @@
                     <i class="fas fa-trophy"></i>
                     <p>Classement</p>
                 </a>
-            </div>
+            </div> -->
         </footer>
     </body>
 </html>

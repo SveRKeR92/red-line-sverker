@@ -14,14 +14,14 @@
 <body>
     <header>
         <div class="heading">
-            <a href="#">
+            <!-- <a href="<?= URL?>views/index.php">
                 <i class="fas fa-bars"></i>
-            </a>
+            </a> -->
             <a href="<?php echo URL ?>">
                 <img src="<?php echo URL ?>img/logo.png" alt="logo du site">
             </a>
-            <a href="#">
+            <!-- <a href="<?= URL?>views/profil.php">
                 <i class="fas fa-user"></i>
-            </a>         
+            </a>          -->
         </div>
     </header>

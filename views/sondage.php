@@ -12,7 +12,7 @@ include '../include/header.php';
         </div>
     </div>
 </main>
-<script src="../script/quizz.js"></script>
+<!-- <script src="../script/quizz.js"></script> -->
 
 <?php
 include '../include/footer.php'
