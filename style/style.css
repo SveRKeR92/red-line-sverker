@@ -157,7 +157,7 @@ ul{
     text-transform: none;
 }
 
-main h3, a{
+main a{
     color:  rgb(63, 141, 230);
     text-transform: capitalize;
     font-size: 25px;

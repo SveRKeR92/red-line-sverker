@@ -29,7 +29,7 @@ $sondages = new Sondage();
             $actSond = $sondages->getActiveSonds();
             foreach ($actSond as $key) {
                 echo " <article class='link-container'>
-                    <a href='sondage.php?id=$key->sondage_id'>$key->sondage_title</a>
+                    <a href='sondPage.php?id=$key->sondage_id'>$key->sondage_title</a>
                     <p>Date de création : $key->creation_date</p>
                     </article>";
             }
@@ -42,7 +42,7 @@ $sondages = new Sondage();
             $unSond = $sondages->getInactiveSonds();
             foreach ($unSond as $key) {
                 echo " <article class='link-container'>
-                        <a href='sondage.php?id=$key->sondage_id'>$key->sondage_title</a>
+                        <a href='sondPage.php?id=$key->sondage_id'>$key->sondage_title</a>
                         <p>Date de création : $key->creation_date</p>
                     </article>";
             }

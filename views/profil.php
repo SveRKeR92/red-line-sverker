@@ -1,7 +1,6 @@
 <?php
 include "../include/init.php";
 require "../include/header.php";
-var_dump($_SESSION["user"]);
 ?>
 <main>
     <?php include '../include/navleft.php'; ?>
