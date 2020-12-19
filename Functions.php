@@ -1,5 +1,5 @@
 <?php
-include "./include/init.php";
+session_start();
 require "./Autoloader.php";
 Autoloader::register();
 

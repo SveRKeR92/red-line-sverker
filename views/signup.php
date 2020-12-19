@@ -17,5 +17,7 @@ require "../include/header.php";
     <?php include '../include/navright.php'; ?>
 </main>
 
+<script src="../script/login.js"></script>
+
 <?php
 require "../include/footer.php";

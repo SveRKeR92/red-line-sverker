@@ -4,18 +4,6 @@ $('button').click(function (e) {
 
 getFriends();
 
-$('#friendsButton').click(function () {
-
-    $('#friendsButton').toggleClass('hideFriends');
-    if($('#friendsButton').hasClass('hideFriends')){
-        $('#friendsList').empty();
-        $('#friendsButton').html('Afficher tes amis');
-    } else{
-        getFriends();
-        $('#friendsButton').html('Cacher tes amis');
-    }
-});
-
 function deletefriend(id) {
 
     let data = {"friend_user_id": id};
@@ -38,13 +26,14 @@ function getFriends(){
         success:function(response){
             // location.href= "../Public/profil.php";
             // console.log(response);
-
+            $("#friendsList").empty();
             let friends = response
             $("#friendsList").append('<h2>Mes amis</h2>');
             $("#friendsList").append('<hr>');
             friends.forEach((item, index) => {
-                $("#friendsList").append("<li>"+ (index + 1) + " " + item["pseudo"] + " </li><button onclick='deletefriend(" + item["user_id"] + ")'>Supprimer</button><br>");
+                $("#friendsList").append("<li>"+ (index + 1) + " - " + item["pseudo"] + " </li><button onclick='deletefriend(" + item["user_id"] + ")'>Supprimer</button><br>");
             });
+            $('#friendsList').append('<a href="add.php">Ajouter des amis</a>');
         }
     });
 }
