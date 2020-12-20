@@ -27,8 +27,13 @@ li{
     list-style-type: none;
 }
 
+input{
+    padding: 5px;
+}
+
 input, button {
     outline: none;
+    margin: 10px;
 }
 
 input:read-only{

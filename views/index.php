@@ -9,15 +9,15 @@ use App\Sondage;
 $sondages = new Sondage();
 ?>
 
-
-<div class="lookout-bckgrd">
+<!-- Ne marche pas encore -->
+<!-- <div class="lookout-bckgrd">
     <div class="lookout">
         <label for="search">
             <i class="fas fa-search"></i>
         </label>
         <input type="search" name="search" id="search" placeholder="Rechercher un sondage...">
     </div>
-</div>
+</div> -->
 
 <main>
     <?php include '../include/navleft.php'; ?>
